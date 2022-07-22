@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = +prompt("nhập số nt")
+    if (number<2 ){
+        alert(number +"ko phai so nt")
+    }
+    else {
+        let count = 0;
+
+        for (let i = 2; i < number / 2; i++) {
+            if (number%i == 0) {
+                count++
+                alert(number + "ko phai snt")
+                break
+            }
+        }
+        if (count == 0) {
+            alert("la sô nt")
+        }
+    }
+// let number=(prompt("nhập số vào"))
+//
+//    if (number<2) {
+//        alert("ko phải số nguyên tố")
+//    }
+//    else {
+//        let check =true
+//        for (i=2;i< number/2;i++){
+//
+//        }
+//
+//
+//    }
+
+
+
+</script>
+</body>
+</html>

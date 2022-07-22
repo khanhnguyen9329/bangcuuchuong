@@ -7,17 +7,31 @@
 <body>
 <p  id="result"></p>
 <script>
-  let content = "<table border='1'>"
-  for (let i = 1; i < 9; i++) {
-    content+= "<tr>";
-    for (let j = 1; j<9 ; j++) {
-      content+="<td>"+i*j+"</td>";
-    }
-    content+="</tr>";
-  }
-  content+= "</table>";
+ let h = 4;
+  for( let i=1 ;i<=h; i++) {
 
-  document.getElementById("result").innerHTML = content;
+      for (let j = 1; j <= i; j++) {
+          document.write("*");
+      }
+document.write("<br>")
+  }
+ let h = 10;
+ for( let i=10 ;i=h; i++) {
+
+     for (let j = 1; j <= i; j++) {
+         document.write("*");
+     }
+     document.write("<br>")
+ }
+// const sh = 10
+// for (let i=1;i<=sh;i++){
+//     for(var k = sh ; k > i; k--);{
+//     document.write("&ensp; &ensp;");
+//     } for (let j=1; j<= i*2-1; j++){
+//         document.write("*");
+//     }
+//   document.write("<br>");
+// }
 </script>
 </body>
 </html>

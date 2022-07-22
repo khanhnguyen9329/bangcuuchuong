@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body id="khanh">
-
+<body> <H1 style="color:PINK"> BẢNG CỬU CHƯƠNG </H1>
+<h1 id="demo"></h1>
 <script>
-    let Ninechapters
-    for (let i =1; i<=10; i++){
-        Ninechapters += ""
-        for (let j=1;j <=10;j++)
-        {
-            Ninechapters += i + "x"+ j+ " = " +i*j +"<br>"
-        }
-    }
+let conten =" <table border='10' style='color: red'width='1%' >"
 
-document.getElementById("khanh").innerHTML=Ninechapters
+for (let i =1; i<=10; i++){
+        conten+="<tr>"
+        for (let j =1; j<=10;j++){
+            conten+="<td>"+j+"x"+i+"="+i*j+"</td>"
+        }
+conten+="<tr>"
+    }
+        conten+="<table>"
+        document.getElementById("demo").innerHTML=conten;
+
+
+
+
+
+
 </script>
 </body>
 </html>
